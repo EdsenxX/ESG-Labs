@@ -1,0 +1,111 @@
+form.contact{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2vw;
+    height: 86vh;
+    h2{
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 3.5vw;
+        color: #fff;
+    }
+    div.info{
+        width: 50%;
+        float: left;
+        margin: 2vw 0;
+        padding: 0 2vw;
+        label{
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5vw;
+            width: 100%;
+            color: #fff;
+        }
+        input{
+            width: 100%;
+            padding: .5vw;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2vw;
+            background: rgba(0, 0, 0, 0.5);
+            border-color: #1994F3;
+            color: #fff;
+        }
+    }
+    div.message{
+        width: 100%;
+        padding: 0 2vw;
+        label{
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5vw;
+            width: 100%;
+            color: #fff;
+        }
+        textarea{
+            width: 100%;
+            padding: .5vw;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2vw;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-color: #1994F3;
+        }
+    }
+    input.boton{
+        background: #1994F3;
+        color: #fff;
+        border: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5vw;
+        padding: 1vw;
+        cursor: pointer;
+        margin: 1vw;
+    }
+}
+form.contact::before{
+    /*background-image: url(../sources/img/contact.jpg);*/
+    content: '';
+    z-index: -1;
+    filter: brightness(.5);
+}
+@media only screen and (max-width:480px){
+    form.contact{
+        width: 90%;
+        h2{
+            font-size: 5.5vw;
+        }
+        div.info{
+            width: 100%;
+            margin: 1vw 0;
+            label{
+                font-size: 3vw;
+            }
+            input{
+                font-size: 3vw;
+            }
+        }
+        div.message{
+            label{
+                font-size: 3vw;
+            }
+            textarea{
+                font-size: 3vw;
+            }
+        }
+        input.boton{
+            font-size: 3vw;
+        }
+    }
+}
+div.ouroffice{
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Oswald', sans-serif;
+    cursor: default;
+    div.mapa{
+        width: 100%;
+        background: greenyellow;
+        display: block;
+        height: 50vh;
+    }
+}

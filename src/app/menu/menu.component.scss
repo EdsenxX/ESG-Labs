@@ -1,0 +1,40 @@
+.menu{
+    width: 100%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    border-bottom: .1vw solid #1994F3;
+    height: 10vh;
+    z-index: 10;
+    p{
+        float: left;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        border-left: 1vw solid #1994F3;
+        font-size: 3vw;
+        margin-left: .5vw;
+        margin-top: .15vw;
+    }
+    nav{
+        float: right;
+        ul{
+            list-style: none;
+            line-height: 5vw;
+            li{ 
+                float: left;   
+                margin-right: 1vw;
+                font-family: 'Montserrat', sans-serif;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.3vw;
+                    padding: 1.5vw;
+                }
+                a:hover{
+                    background: #1994F3;
+                    transition: all .8s ease;
+                }
+            }
+        }
+    }
+}

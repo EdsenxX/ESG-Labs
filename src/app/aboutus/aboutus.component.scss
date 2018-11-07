@@ -1,0 +1,231 @@
+div.whoweare{
+    position: relative;
+    height: auto;
+    div.contenido{
+        width: 80%;
+        margin: 0 auto;
+        h2{
+            padding: 3vw 0;
+            font-size: 3.5vw;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+        }
+        p{
+            color: #000;
+            font-size: 1.5vw;
+            text-align: center;
+            padding: 0 5vw;
+            padding-bottom: 3vw;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    /*::before{
+        content: '';
+        background-image: url(../sources/img/team.jpg);
+    }*/
+}
+@media only screen and (max-width:480px){
+    div.whoweare{
+        padding-top: 8vw !important;
+        div.contenido{
+            width: 95%;
+            h2{
+                font-size: 7vw;
+            }
+            p{
+                font-size: 4vw;
+                text-align: justify;
+            }
+        }
+    }
+}
+div.objetivos{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    div.contenedors{
+        float: left;
+        width: 47%;
+        margin: 1vw;
+        height: auto;
+        h2{
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            font-size: 2.5vw;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            padding: 1vw;
+            font-size: 1.2vw;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width:480px){
+    div.objetivos{
+        div.contenedors{
+            width: 100%;
+            h2{
+                font-size: 6vw;
+            }
+            p{
+                font-size: 3.5vw;
+                text-align: justify;
+            }
+        }
+    }
+}
+section.fundadores{
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    padding: 3vw;
+    div.founders{
+        height: 100%;
+        width: 100vw;
+        position: relative;
+        nav.personas{
+            width: 80%;
+            margin:auto;
+            h2{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 3vw;
+                text-align: center;
+                margin-bottom: .2vw;
+                color: #fff;
+            }
+            ul li{
+                list-style: none;
+                width: 30%;
+                height: auto;
+                padding: 1.5vw;
+                display: inline-block;
+                padding: 1vw;
+                margin: 1vw;    
+                background: rgba(0, 0, 0, 0.8);
+                border: .01vw solid #666;
+                img{
+                    width: 17vw;
+                    height: 17vw;
+                    padding: 1.5vw;
+                    border-radius: 50%;
+                }
+                h3{
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+                    font-size: 2vw;
+                    margin: 1vw 0;
+                    padding-bottom: 1vw;
+                    border-bottom: .03vw solid #666;
+                    color: #fff;
+                }
+                p{
+                    text-align: justify;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.3vw;
+                    padding: 1vw;
+                    color: #fff;
+                }
+            }
+            ul li:hover{
+                transform: scale(1.05);
+                cursor: pointer;
+                transition: all .4s ease;
+                border-color: #fe4819;
+                box-shadow: 0vw 0vw 2vw #666;
+                h3{
+                    border-color: #fe4819;
+                    transition: all .6s ease;
+                }
+            }
+        }
+    }
+    /*::before{
+        content: '';
+        background-image: url(../sources/img/code.jpg);
+    }*/
+}
+@media only screen and (max-width:480px){
+    section.fundadores{
+        display: none;
+    }
+}
+div.people{
+    position: relative;
+    width: 80%;
+    margin: 0vw auto;
+    h2{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin: 2vw;
+        font-size: 3vw;
+    }
+    div.personal{
+        width: 18.5%;
+        position: relative;
+        cursor: pointer;
+        float: left;
+        margin: .5vw;
+        img{
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            filter: brightness(.6);
+        }
+        div{
+            position: absolute;
+            background: #fff;
+            padding: .6vw 1vw;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: none;
+            h3{
+                font-family: 'Oswald', sans-serif;
+                text-align: center;
+                font-size: 1.4vw;
+                border-bottom: 1px solid #fe4819;
+                padding-bottom: .3vw;
+            }
+            p{
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                font-size: 1vw;
+                margin-top: .3vw;
+            }
+        }
+    }
+    div.personal:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 3vw #666;
+        border: 1px solid #fe4819;
+        img{
+            filter: none !important;
+            transition: all .5s ease;
+        }
+        div{
+            display: block;
+        }
+    }
+}
+@media only screen and (max-width:480px){
+    div.people{
+        width: 95%;
+        div.personal{
+            width: 48.5%;
+            div{
+                h3{
+                    font-size: 4.5vw;
+                }
+                p{
+                    font-size: 3.5vw;
+                }
+            }
+        }
+        h2{
+            font-size: 8vw;
+        }
+    }
+}

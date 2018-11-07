@@ -1,0 +1,171 @@
+header{
+    height: 90vh;
+    width: 100%;
+    .hero{
+        position: relative;
+        height: 100%;
+        nav.social-networks{
+            text-align: center !important;
+            position: relative;
+            a{
+                i{
+                    color: #000;
+                    font-size: 2.2vw;
+                    margin-top: 1vw;
+                    margin-right: 1.2vw;
+                }
+                i:hover{
+                    transform: scale(1.4);
+                }
+            }
+        }
+        h1{
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 5vw;
+            text-align: center;
+            margin-top: 12vw;
+            text-shadow: .1vw .1vw #fff;
+            position: relative;
+        }
+        p{
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5vw;
+            color: #000;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: .1vw .1vw #fff;
+        }
+    }
+    .hero::before{
+        content: '';
+        background-image: url(https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    }
+}
+div.servicios{
+    width: 100%;
+    padding: 3vw 0;
+    background: #fafafa;
+    nav.service-list{
+        width: 80%;
+        margin:auto;
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3vw;
+            text-align: center;
+            margin-bottom: 1.2vw;
+        }
+        ul li{
+            list-style: none;
+            width: 30%;
+            height: auto;
+            padding: 1.5vw;
+            display: inline-block;
+            padding: 1vw;
+            margin: 1vw;    
+            background: #fff;
+            border: .01vw solid #f1f1f1;
+        }
+        ul li:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+            transition: all .4s ease;
+            border-color: #fe4819;
+            box-shadow: 0vw 0vw 2vw #666;
+        }
+        ul li:hover h3{
+            border-color: #fe4819;
+            transition: all .6s ease;
+        }
+        ul li img{
+            width: 7vw;
+            height: 7vw;
+            padding: 1.5vw;
+        }
+        ul li h3{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-size: 1.7vw;
+            margin: 1vw 0;
+            padding-bottom: 1vw;
+            border-bottom: .03vw solid #f5f5f5;
+        }
+        ul li p{
+            text-align: justify;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3vw;
+            padding: 1vw;
+        }
+    }
+    @media only screen and (max-width:480px){
+        nav.service-list{
+            width: 90%;
+            h2{
+                font-size: 8vw;
+            }
+            ul li{
+                width: 100%;
+            }
+            ul li img{
+                width: 15vw;
+                height: 15vw;
+                padding: 1.5vw;
+            }
+            ul li h3{
+                font-size: 5vw;
+            }
+            ul li p{
+                font-size: 4vw;
+                padding: 2vw !important;
+            }
+            ul li:hover{
+                transform: none;
+                border-color: #f5f5f5;
+                box-shadow: none;
+            }
+            ul li:hover h3{
+                border-color: #f5f5f5;
+            }
+        }
+    }
+}
+div.technology{
+    position: relative;
+    height: auto;
+    div.contenido{
+        position: relative;
+    }
+    div.contenido h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5vw;
+        text-align: center;
+        color: #000;
+        padding: 2vw 0;
+    }
+    nav{
+        width: 50%;
+        margin: 0 auto;
+        padding: 2vw 0;
+    }
+    nav ul li{
+        font-size: 7vw;
+        color: #000;
+        display: inline;
+        margin-left: 2vw;
+    }
+    @media only screen and (max-width:480px){
+        div.contenido h2{
+            font-size: 6vw;
+            padding: 2vw 0;
+            nav ul li{
+                font-size: 15vw;
+            }
+        }
+    }
+}
+div.technology::before{
+    content: '';
+    /*background-image: url(../sources/img/technology.jpg);*/
+}
